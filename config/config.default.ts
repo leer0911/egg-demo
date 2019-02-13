@@ -19,6 +19,9 @@ export default (appInfo: EggAppInfo) => {
         options: {}
       }
     },
+    jwt: {
+      secret: '123456'
+    },
     security: {
       csrf: {
         enable: false
