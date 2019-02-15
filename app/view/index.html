@@ -1,0 +1,32 @@
+<main role="main" class="inner cover">
+  <% if (data.isLogin) { %>
+    <h2>Hi, <%= data.user.loginname %>.</h2>
+    <p class="lead">
+      Welcome to the egg demo!
+    </p>
+    <p class="lead">
+      <a
+        href="/signout"
+        class="btn btn-lg btn-secondary"
+        >Logout</a
+      >
+    </p>
+  <% } else { %>
+    <h1 class="cover-heading">Born to build.</h1>
+    <p class="lead">
+      better enterprise frameworks and apps with Node.js & Koa
+    </p>
+    <p>
+      为企业级框架和应用而生
+    </p>
+    <p class="lead">
+      <a
+        href="https://eggjs.org/"
+        target="_blank"
+        class="btn btn-lg btn-secondary"
+        >Learn more</a
+      >
+    </p>
+  <% } %>
+  
+</main>
